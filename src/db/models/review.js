@@ -3,24 +3,20 @@ import sequelize from "../connector.js"
 
 const {DataTypes} = sq
 
-const user = sequelize.define(`user`, {
+const review = sequelize.define(`review`, {
     id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true
     },
-    firstName: {
+    text: {
         type: DataTypes.STRING,
         allowNull: false
     },
-    lastName: {
-        type: DataTypes.TEXT,
-        allowNull: false
-    },
-    avatar: {
-        type: DataTypes.TEXT,
+    rate: {
+        type: DataTypes.FLOAT,
         allowNull: false
     }
 })
 
-export default user
+export default review

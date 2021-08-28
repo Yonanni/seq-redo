@@ -19,3 +19,4 @@ const category = sequelize.define(`category`, {
     }
     
 })
+export default category

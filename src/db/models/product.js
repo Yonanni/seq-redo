@@ -26,3 +26,5 @@ const product = sequelize.define(`product`, {
         allowNull: false
     }
 })
+
+export default product
