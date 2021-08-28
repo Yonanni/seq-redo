@@ -14,7 +14,7 @@ const sequelize = new Sequelize(PGDATABASE, PGUSER, PGPASSWORD, {
 export const syncTestSequelize = async () => {
     try {
         await sequelize.authenticate()
-        await sequelize.sync({ force: true })
+        await sequelize.sync({force: true})
         console.log(`🎊🎁 DB running!!!!!`)
     } catch (error) {
         console.log(error)
