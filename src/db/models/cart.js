@@ -3,7 +3,7 @@ import sequelize from "../connector.js"
 
 const {DataTypes} = sq
 
-const cart = sequelize.define(`cart`, {
+const cart = sequelize.define("cart", {
     id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
